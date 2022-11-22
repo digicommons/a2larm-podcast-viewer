@@ -2,7 +2,7 @@
   let promise = Promise.resolve([]);
 
   async function getData(){
-    const response = await fetch('https://a2larm-podcast-parser.herokuapp.com/full-feed.json');
+    const response = await fetch('https://gist.githubusercontent.com/digicommons/b7fa5297ddb21b46ee63794b5a381098/raw/1a1f2b87618a6bffc58852a07d7f424919a08149/a2larm-feed-2022-11-22.json');
     const data = await response.json();
 
     return Object.values(data.podcasts);
